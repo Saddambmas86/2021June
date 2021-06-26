@@ -24,6 +24,7 @@ driver=new ChromeDriver();
 else if(Utility.fetchProperty("browserName").toString().equalsIgnoreCase("firefox")){
 	System.setProperty("webdriver.gecko.driver", "./driver/geckodriver.exe");
 	driver=new FirefoxDriver();
+	System.out.println("Add new line for commit");
 }
 
 else if(Utility.fetchProperty("browserName").toString().equalsIgnoreCase("ie")){
